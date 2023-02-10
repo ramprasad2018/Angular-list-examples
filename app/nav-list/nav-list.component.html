@@ -1,0 +1,15 @@
+<h5>Simple Nav List</h5>
+<mat-nav-list >
+	<ng-container *ngFor="let link of links">
+		<a mat-list-item href="javascript:void(0)"> {{ link }} </a>
+	</ng-container>
+</mat-nav-list>
+<h5>Complex Nav List</h5>
+<mat-nav-list>
+	<mat-list-item *ngFor="let link of links">
+		<a matLine href="javascript:void(0)">{{ link }}</a>
+		<button mat-icon-button>
+        <mat-icon>info</mat-icon>
+     </button>
+	</mat-list-item>
+</mat-nav-list>
